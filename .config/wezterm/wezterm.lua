@@ -1,40 +1,16 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
-local gpus = wezterm.gui.enumerate_gpus()
 
 return {
   enable_wayland = true,
   prefer_egl = true,
-  front_end = "WebGpu",
-  webgpu_preferred_adapter = gpus[2],
   color_scheme = 'Catppuccin Macchiato',
   enable_tab_bar = false,
   inactive_pane_hsb = {
     saturation = 0.9,
     brightness = 0.7,
   },
-  -- enable_scroll_bar = true,
-  background = {
-    {
-      source = {
-        Color="#24273a"
-      },
-      height = "100%",
-      width = "100%",
-    },
-    {
-      source = {
-        File = '/home/xnm/.config/wezterm/lain.gif',
-      },
-      opacity = 0.02,
-      vertical_align = "Middle",
-      horizontal_align = "Center",
-      height = "1824",
-      width = "2724",
-      repeat_y = "NoRepeat",
-      repeat_x = "NoRepeat",
-    },
-  },
+  enable_scroll_bar = true,
   launch_menu = {
     {
       args = { 'btop' },
