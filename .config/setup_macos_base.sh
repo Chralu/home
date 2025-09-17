@@ -1,7 +1,7 @@
 #! /bin/env sh
 
 brew install \
-  font-hack-nerd-font	iterm2 \
+  font-hack-nerd-font	kitty \
   direnv fish starship \
   opensc openssh ykman \
   lazygit \
