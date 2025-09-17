@@ -8,5 +8,6 @@ brew install \
   helix \
   vscodium \
   element \
-  firefox
+  firefox \
+  localsend
   
