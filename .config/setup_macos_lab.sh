@@ -1,6 +1,7 @@
-#!/bin/env sh
+#!/usr/bin/env sh
 
 brew install \
   hexcurse \
   wireshark wireshark-app \
-  utm crystalfetch
+  utm crystalfetch \
+  lnav
