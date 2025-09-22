@@ -4,4 +4,7 @@ brew install \
   hexcurse \
   wireshark wireshark-app \
   utm crystalfetch \
-  lnav
+  lnav \
+  pipx
+
+pipx install oletools[full]
