@@ -12,7 +12,11 @@ alias nswitch="sudo nixos-rebuild switch --flake /etc/nixos#bagage"
 alias nswitchu="sudo nix flake update --flake /etc/nixos; and sudo nixos-rebuild switch --flake /etc/nixos#bagage --upgrade"
 alias nsgc="sudo nix-store --gc; and sudo nix-collect-garbage -d; and sudo /run/current-system/bin/switch-to-configuration boot"
 
+# NixOS
 alias commitsetup="cd ~/linux-nixos-hyprland-config-dotfiles; and cp -r ~/.config/* ./home/.config; and cp -r /etc/nixos/* ./nixos; and lgit; and cd -"
+
+# Runs Remnux cli in current directory
+alias remnux='podman run --rm -it -u remnux -v "$(pwd)":/home/remnux/files -w /home/remnux/files remnux/remnux-distro:focal bash'
 
 # if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]
 #   exec Hyprland
