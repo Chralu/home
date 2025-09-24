@@ -9,5 +9,7 @@ brew install \
   vscodium \
   element \
   firefox \
-  localsend
+  tor-browser \
+  localsend \
+  freetube
   
