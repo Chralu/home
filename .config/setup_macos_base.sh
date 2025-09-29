@@ -11,5 +11,6 @@ brew install \
   firefox \
   tor-browser \
   localsend \
+  joplin super-productivity \
   freetube
   
