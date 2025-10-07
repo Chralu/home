@@ -2,7 +2,7 @@
 
 brew install \
   font-hack-nerd-font	kitty \
-  direnv fish starship \
+  zoxide direnv fish starship \
   opensc openssh ykman \
   lazygit \
   helix \
