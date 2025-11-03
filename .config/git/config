@@ -112,3 +112,6 @@
 
 [mergetool "delta"]
     cmd = delta "$LOCAL" "$MERGED" "$REMOTE" --side-by-side
+[user]
+	email = contact@charly-caulet.net
+	name = Chralu
