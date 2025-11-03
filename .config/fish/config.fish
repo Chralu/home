@@ -9,7 +9,7 @@ alias conf="z ~/.config"
 alias nixos="z /etc/nixos"
 alias store="z /nix/store"
 alias nswitch="sudo nixos-rebuild switch --flake /etc/nixos#bagage"
-alias nswitchu="sudo nix flake update --flake /etc/nixos; and sudo nixos-rebuild switch --flake /etc/nixos#bagage --upgrade"
+alias nswitchu="sudo nix flake update --flake /etc/nixos --extra-experimental-features flakes --extra-experimental-features nix-command; and sudo nixos-rebuild switch --flake /etc/nixos#bagage --upgrade"
 alias nsgc="sudo nix-store --gc; and sudo nix-collect-garbage -d; and sudo /run/current-system/bin/switch-to-configuration boot"
 
 # NixOS
