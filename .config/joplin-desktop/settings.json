@@ -4,7 +4,7 @@
 	"editor.codeView": true,
 	"sync.target": 7,
 	"richTextBannerDismissed": true,
-	"locale": "fr_FR",
+	"locale": "en_GB",
 	"theme": 2,
 	"preferredDarkTheme": 2,
 	"notes.listRendererId": "compact",
@@ -17,7 +17,7 @@
 			{
 				"key": "sideBar",
 				"width": 180,
-				"visible": false
+				"visible": true
 			},
 			{
 				"key": "noteList",
