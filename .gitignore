@@ -1,7 +1,27 @@
-!.gitignore
-!.config/
-!.config/**
-!.icons/
-!.icons/**
 Downloads/**
 Documents/**
+VMs/Installation images/**
+VirtualBox VMs/**
+.cache/**
+.config/FreeTube/**
+.config/Joplin/**
+.config/VirtualBox/**
+.config/btop/**
+.config/enchant/**
+.config/glib-2.0/**
+.config/.gsd-keyboard.settings-ported
+.config/QtProject.conf
+.config/dleyna-server-service.conf
+.dart-tool
+.gnupg
+.local/share/**
+!.local/share/gnome-shell/extensions
+.local/state/**
+.mozilla/firefox
+.nix-defexpr
+.pki/nssdb
+.pub-cache
+.ssh
+.theHarvester
+.bash_history
+.nix-profile
