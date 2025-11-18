@@ -29,6 +29,7 @@ set -gx BRIGHTNESS_STEP 5
 set -gx PATH $HOME/.cargo/bin $PATH
 set -gx PATH $HOME/.npm-packages/bin $PATH
 set -gx PATH $HOME/.local/bin $PATH
+set -gx PATH $HOME/.pub-cache/bin $PATH
 
 set -gx SSH_CONFIG $HOME/.config/ssh
 
@@ -50,4 +51,7 @@ if test -e /opt/homebrew/bin/brew
     eval "$(/opt/homebrew/bin/brew shellenv)"
 end
 
-eval "$(mise activate fish)"
+if set -q ZELLIJ
+else
+    zellij
+end
