@@ -51,8 +51,3 @@ if test -e /opt/homebrew/bin/brew
     eval "$(/opt/homebrew/bin/brew shellenv)"
     alias brup="brew update; brew upgrade; brew upgrade --cask --greedy"
 end
-
-if set -q ZELLIJ
-else
-    zellij
-end
