@@ -43,11 +43,11 @@ set -Ux FZF_DEFAULT_OPTS "\
 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
 
-starship init fish | source
-zoxide init fish | source
-direnv hook fish | source
-
 if test -e /opt/homebrew/bin/brew
     eval "$(/opt/homebrew/bin/brew shellenv)"
     alias brup="brew update; brew upgrade; brew upgrade --cask --greedy"
 end
+
+starship init fish | source
+zoxide init fish | source
+direnv hook fish | source
