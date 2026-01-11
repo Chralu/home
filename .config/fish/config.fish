@@ -31,8 +31,6 @@ set -gx PATH $HOME/.npm-packages/bin $PATH
 set -gx PATH $HOME/.local/bin $PATH
 set -gx PATH $HOME/.pub-cache/bin $PATH
 
-set -gx SSH_CONFIG $HOME/.config/ssh
-
 set fish_vi_force_cursor
 set fish_cursor_default block
 set fish_cursor_insert line blink
