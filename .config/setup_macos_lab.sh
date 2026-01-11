@@ -5,8 +5,17 @@ brew install \
   wireshark wireshark-app \
   utm crystalfetch \
   lnav \
-  podman podman-tui podman-compose podman-desktop krunkit
+  podman podman-tui podman-compose podman-desktop krunkit \
+  nmap \
+  burp-suite proxyman \
+  android-studio apktool jadx dex2jar 
 
+pipx install frida-tools objection mobsf
+
+function install_metasploit {
+  curl -o ~/Downloads/metasploitframework-latest.pkg https://osx.metasploit.com/metasploitframework-latest.pkg
+  open ~/Downloads/metasploitframework-latest.pkg
+}
 
 function is_podman_ready {
   # echo "is podman ready ?"
@@ -38,3 +47,4 @@ function download_podman_images {
 }
 
 init_podman && download_podman_images
+install_metasploit
